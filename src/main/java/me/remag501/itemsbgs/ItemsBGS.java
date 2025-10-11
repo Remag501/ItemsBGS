@@ -1,6 +1,6 @@
 package me.remag501.itemsbgs;
 
-import me.remag501.itemsbgs.command.ItemCommand;
+import me.remag501.itemsbgs.command.ItemsBGSCommand;
 import me.remag501.itemsbgs.item.GrenadeItem;
 import me.remag501.itemsbgs.item.MolotovItem;
 import me.remag501.itemsbgs.listener.ItemListener;
@@ -26,7 +26,7 @@ public class ItemsBGS extends JavaPlugin {
         registerCustomItems();
 
         // 2. Register command executor (passing the manager)
-        getCommand("giveitems").setExecutor(new ItemCommand(itemManager));
+        getCommand("itemsbgs").setExecutor(new ItemsBGSCommand(itemManager));
 
         // 3. Register the event listener (passing the manager)
         getServer().getPluginManager().registerEvents(new ItemListener(this, itemManager), this);
