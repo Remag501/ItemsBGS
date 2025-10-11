@@ -1,0 +1,4 @@
+name: BGSItems
+version: '1.0-SNAPSHOT'
+main: org.example.Remag501.bGSItems.BGSItems
+api-version: '1.19'
