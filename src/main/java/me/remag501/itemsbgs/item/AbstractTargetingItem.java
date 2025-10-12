@@ -1,5 +1,6 @@
 package me.remag501.itemsbgs.item;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
@@ -15,7 +16,15 @@ import org.bukkit.inventory.ItemStack;
 public abstract class AbstractTargetingItem implements ProjectileItem {
 
     // Define the common default range here
-    private static final int DEFAULT_RANGE = 20;
+    protected int defaultRange;
+
+    protected AbstractTargetingItem() {
+        this.defaultRange = 50;
+    }
+
+    protected AbstractTargetingItem(int defaultRange) {
+        this.defaultRange = defaultRange;
+    }
 
     /**
      * Implements the preferred calculation: a simple ray-trace to find the targeted block.
@@ -26,9 +35,12 @@ public abstract class AbstractTargetingItem implements ProjectileItem {
     public Location getActivationLocation(Player player) {
         // Find the block the player is looking at within the default range.
         // The second argument in getTargetBlock is maxDistance (range)
-        Block targetBlock = player.getTargetBlock(null, DEFAULT_RANGE);
+        Block targetBlock = player.getTargetBlock(null, defaultRange);
+        Bukkit.getLogger().info("" + defaultRange);
 
-        if (targetBlock == null || targetBlock.getType() == Material.AIR) {
+        defaultRange = 50;
+
+        if (targetBlock == null) {
             // Return null if no valid solid block is targeted
             return null;
         }

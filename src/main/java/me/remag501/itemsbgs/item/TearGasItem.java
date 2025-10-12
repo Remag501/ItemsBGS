@@ -76,8 +76,8 @@ public class TearGasItem extends AbstractTargetingItem {
 
         // 3. Apply the velocity
         Vector velocity = targetLocation.toVector().subtract(eyeLoc.toVector());
-        velocity.normalize().multiply(1.5);
-        velocity.setY(velocity.getY() + 0.3); // Arc
+        velocity.normalize().multiply(0.9);
+        velocity.setY(velocity.getY() + 0.1); // Arc
         tearGasCanister.setVelocity(velocity);
 
         // 4. TAG THE ITEM with metadata
