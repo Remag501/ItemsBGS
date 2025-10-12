@@ -3,6 +3,7 @@ package me.remag501.itemsbgs;
 import me.remag501.itemsbgs.command.ItemsBGSCommand;
 import me.remag501.itemsbgs.item.GrenadeItem;
 import me.remag501.itemsbgs.item.MolotovItem;
+import me.remag501.itemsbgs.item.TearGasItem;
 import me.remag501.itemsbgs.listener.ItemListener;
 import me.remag501.itemsbgs.manager.ItemManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -41,6 +42,7 @@ public class ItemsBGS extends JavaPlugin {
     private void registerCustomItems() {
         itemManager.registerItem(new MolotovItem());
         itemManager.registerItem(new GrenadeItem());
+        itemManager.registerItem(new TearGasItem());
     }
 
     @Override
