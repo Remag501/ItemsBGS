@@ -1,7 +1,7 @@
 package me.remag501.itemsbgs.manager;
 
 import me.remag501.itemsbgs.ItemsBGS;
-import me.remag501.itemsbgs.item.CustomItem;
+import me.remag501.itemsbgs.model.CustomItem;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;

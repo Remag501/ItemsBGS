@@ -1,6 +1,7 @@
 package me.remag501.itemsbgs.item;
 
 import me.remag501.itemsbgs.ItemsBGS;
+import me.remag501.itemsbgs.model.AbstractTargetingItem;
 import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -17,8 +18,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Concrete implementation of the Molotov Cocktail item.

@@ -1,4 +1,4 @@
-package me.remag501.itemsbgs.item;
+package me.remag501.itemsbgs.model;
 
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;

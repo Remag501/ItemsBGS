@@ -1,8 +1,8 @@
 package me.remag501.itemsbgs.listener;
 
 import me.remag501.itemsbgs.ItemsBGS;
-import me.remag501.itemsbgs.item.CustomItem;
-import me.remag501.itemsbgs.item.ProjectileItem;
+import me.remag501.itemsbgs.model.CustomItem;
+import me.remag501.itemsbgs.model.ProjectileItem;
 import me.remag501.itemsbgs.manager.ItemManager;
 
 import org.bukkit.Location;

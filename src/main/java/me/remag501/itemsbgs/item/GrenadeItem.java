@@ -1,5 +1,6 @@
 package me.remag501.itemsbgs.item;
 
+import me.remag501.itemsbgs.model.AbstractTargetingItem;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;

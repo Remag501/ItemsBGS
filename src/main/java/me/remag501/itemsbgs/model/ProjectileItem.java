@@ -1,9 +1,8 @@
-package me.remag501.itemsbgs.item;
+package me.remag501.itemsbgs.model;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.inventory.ItemStack;
 
 /**
  * Interface for custom items that are thrown or require a target location.
