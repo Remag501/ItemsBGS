@@ -36,7 +36,6 @@ public abstract class AbstractTargetingItem implements ProjectileItem {
         // Find the block the player is looking at within the default range.
         // The second argument in getTargetBlock is maxDistance (range)
         Block targetBlock = player.getTargetBlock(null, defaultRange);
-        Bukkit.getLogger().info("" + defaultRange);
 
         defaultRange = 50;
 

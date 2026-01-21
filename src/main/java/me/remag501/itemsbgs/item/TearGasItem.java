@@ -39,13 +39,13 @@ public class TearGasItem extends AbstractTargetingItem {
         ItemStack item = new ItemStack(Material.GLASS_BOTTLE, amount); // Changed to Glass Bottle for visual
         ItemMeta meta = item.getItemMeta();
 
-        meta.setDisplayName("§8§lTear Gas Canister");
+        meta.setDisplayName("§8§lTear Gas §8Canister §c✪✪");
         meta.setLore(Arrays.asList(
-                "§7A non-lethal projectile that",
-                "§7causes temporary blindness",
-                "§7and disorientation in an area.",
-                "",
-                "§eRight-click to use."
+                "§8• §fA non-lethal projectile that",
+                "§fcauses temporary blindness",
+                "§fand disorientation in an area.",
+                "§r",
+                "§7§o(( Right-click to use. ))"
         ));
 
         item.setItemMeta(meta);
@@ -58,7 +58,7 @@ public class TearGasItem extends AbstractTargetingItem {
      */
     @Override
     public void onThrow(Player activator, Location targetLocation, Plugin plugin) {
-        activator.sendMessage("§8Tear Gas launched!");
+        activator.sendMessage("§a§l(!) §aTear Gas launched!");
         activator.getWorld().playSound(activator.getLocation(), Sound.ENTITY_EGG_THROW, 0.5f, 1.0f); // Throw sound
 
         Location eyeLoc = activator.getEyeLocation();

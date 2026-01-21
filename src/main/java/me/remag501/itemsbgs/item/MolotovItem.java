@@ -49,12 +49,12 @@ public class MolotovItem extends AbstractTargetingItem {
         ItemStack item = new ItemStack(Material.REDSTONE_TORCH, amount);
         ItemMeta meta = item.getItemMeta();
 
-        meta.setDisplayName("§6§lMolotov Cocktail");
+        meta.setDisplayName("§6§lMolotov §6Cocktail §e✪✪✪");
         meta.setLore(Arrays.asList(
-                "§7A crude explosive that causes",
-                "§7a short-lived patch of fire.",
-                "",
-                "§eRight-click to use."
+                "§8• §fA crude explosive that causes",
+                "§fa short-lived patch of fire.",
+                "§r",
+                "§7§o(( Right-click to use. ))"
         ));
 
         item.setItemMeta(meta);
@@ -66,7 +66,7 @@ public class MolotovItem extends AbstractTargetingItem {
      */
     @Override
     public void onThrow(Player activator, Location targetLocation, Plugin plugin) {
-        activator.sendMessage("§6Molotov thrown!");
+        activator.sendMessage("§a§l(!) §aMolotov thrown!");
 
         Location eyeLoc = activator.getEyeLocation();
 

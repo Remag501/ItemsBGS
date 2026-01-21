@@ -6,7 +6,8 @@ api-version: '1.19'
 #description: 'Special items for the battlegrounds server.'
 
 commands:
-  giveitems:
+#  giveitems:
+  itemsbgs:
     description: Gives a special item (molotov or grenade) to the player.
     usage: /giveitems <molotov|grenade> [amount]
     permission: molotovgrenades.give

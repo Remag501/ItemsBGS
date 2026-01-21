@@ -83,7 +83,10 @@ public class ItemsBGSCommand implements CommandExecutor, TabCompleter {
 
         if (itemToGive != null) {
             targetPlayer.getInventory().addItem(itemToGive);
-            targetPlayer.sendMessage("§aYou received §b" + amount + " " + itemId + "§a from " + sender.getName() + ".");
+            if(sender.getName() == "CONSOLE")
+                targetPlayer.sendMessage("§6§lITEMS §8» §7You received " + amount + " " + itemId + ".");
+            else
+                targetPlayer.sendMessage("§6§lITEMS §8» §7You received " + amount + " " + itemId + " from " + sender.getName() + ".");
 
             if (!sender.equals(targetPlayer)) {
                 sender.sendMessage("§aSuccessfully gave §b" + amount + " " + itemId + "§a to " + targetPlayer.getName() + ".");
